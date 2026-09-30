@@ -1,0 +1,11 @@
+{
+  "name": "canadafuturegov",
+  "version": "1.0.0",
+  "private": true,
+  "description": "canadafuturegov.ca: an independent concept for an AI-enabled Government of Canada front door",
+  "type": "module",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.129.0",
+    "@netlify/blobs": "^11.1.2"
+  }
+}

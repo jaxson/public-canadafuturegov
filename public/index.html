@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Canada.ca 2.0: ask your government anything</title>
+  <meta name="description" content="An independent concept for a new Government of Canada front door. Ask in plain English or French and get a clear answer from official canada.ca and gc.ca sources.">
+  <meta name="theme-color" content="#ffffff" id="theme-color">
+  <meta property="og:title" content="Canada.ca 2.0">
+  <meta property="og:description" content="Ask your government anything. Clear answers from official Government of Canada sources, in English or French. An independent concept.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://canadafuturegov.ca/">
+  <meta property="og:image" content="https://canadafuturegov.ca/assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script src="/assets/theme.js"></script>
+  <script src="/assets/app.js" defer></script>
+</head>
+<body>
+  <div class="flag-strip" aria-hidden="true"><span></span><span></span><span></span></div>
+  <a class="skip-link" href="#main"><span class="en">Skip to main content</span><span class="fr" lang="fr">Passer au contenu principal</span></a>
+
+  <aside class="notice" id="notice" aria-label="Site notice">
+    <p>
+      <span class="en"><strong>Independent concept.</strong> This is not a Government of Canada website. For official services, go to <a href="https://www.canada.ca/en.html">canada.ca</a>.</span>
+      <span class="fr" lang="fr"><strong>Concept indépendant.</strong> Ce site n’est pas un site du gouvernement du Canada. Pour les services officiels, visitez <a href="https://www.canada.ca/fr.html">canada.ca</a>.</span>
+    </p>
+  </aside>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/" aria-label="Canada.ca 2.0, home">
+        <span class="brand-mark" aria-hidden="true"><svg class="brand-leaf" viewBox="2860 340 3880 4130" aria-hidden="true" focusable="false"><path d="m4890 4430-45-863a95 95 0 0 1 111-98l859 151-116-320a65 65 0 0 1 20-73l941-762-212-99a65 65 0 0 1-34-79l186-572-542 115a65 65 0 0 1-73-38l-105-247-423 454a65 65 0 0 1-111-57l204-1052-327 189a65 65 0 0 1-91-27l-332-652-332 652a65 65 0 0 1-91 27l-327-189 204 1052a65 65 0 0 1-111 57l-423-454-105 247a65 65 0 0 1-73 38l-542-115 186 572a65 65 0 0 1-34 79l-212 99 941 762a65 65 0 0 1 20 73l-116 320 859-151a95 95 0 0 1 111 98l-45 863z"/></svg></span>
+        <span class="brand-name">Canada.ca <span>2.0</span></span>
+      </a>
+      <div class="header-actions">
+        <button type="button" class="lang-toggle" id="lang-toggle">
+          <span class="en" lang="fr">Français</span><span class="fr" lang="en">English</span>
+        </button>
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="site-menu">
+          <svg class="menu-open" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg class="menu-close" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          <span class="menu-label"><span class="en">Menu</span><span class="fr" lang="fr">Menu</span></span>
+        </button>
+      </div>
+      <nav class="site-menu" id="site-menu" aria-label="Main" hidden>
+        <ul class="menu-links">
+          <li><a href="#main-ask"><span class="en">Ask a question</span><span class="fr" lang="fr">Poser une question</span></a></li>
+          <li><a href="#life-events"><span class="en">Life events</span><span class="fr" lang="fr">Événements de vie</span></a></li>
+          <li><a href="#popular"><span class="en">Popular services</span><span class="fr" lang="fr">Services populaires</span></a></li>
+          <li><a href="#next"><span class="en">What’s next</span><span class="fr" lang="fr">La suite</span></a></li>
+          <li><a href="#shift"><span class="en">The bigger shift</span><span class="fr" lang="fr">Le vrai virage</span></a></li>
+        </ul>
+        <div class="menu-footer">
+          <button type="button" class="theme-toggle" id="theme-toggle" aria-pressed="false">
+            <svg class="moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+            <span class="en">Dark mode</span><span class="fr" lang="fr">Mode sombre</span>
+            <span class="switch" aria-hidden="true"><span></span></span>
+          </button>
+          <a class="menu-official" href="https://www.canada.ca/en.html" data-href-fr="https://www.canada.ca/fr.html"><span class="en">Official site: canada.ca</span><span class="fr" lang="fr">Site officiel : canada.ca</span></a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-inner">
+        <h1 id="hero-title">
+          <span class="en">Hello, Canada<span class="accent">.</span></span><span class="fr" lang="fr">Bonjour, Canada<span class="accent">.</span></span>
+        </h1>
+        <p class="lede">
+          <span class="en">Whatever you need from government, start here.</span>
+          <span class="fr" lang="fr">Peu importe ce dont vous avez besoin du gouvernement, commencez ici.</span>
+        </p>
+
+        <div class="stage" id="stage" role="region" aria-roledescription="carousel" aria-labelledby="stage-label">
+          <p id="stage-label" class="sr-only"><span class="en">Ask a question, with example photos</span><span class="fr" lang="fr">Posez une question, avec des photos d’exemples</span></p>
+          <div class="slides" id="slides">
+            <div class="slide is-active" role="group" aria-roledescription="slide" data-index="0" data-ex-en="How do I book a campsite in a national park?" data-ex-fr="Comment réserver un camping dans un parc national?">
+              <img src="/assets/slide-parks.jpg" alt="Red and yellow canoes on the turquoise water of Moraine Lake, below snowy mountains in Banff National Park" data-alt-fr="Des canots rouges et jaunes sur l’eau turquoise du lac Moraine, sous des montagnes enneigées du parc national Banff" width="1600" height="1000" fetchpriority="high" decoding="async">
+            </div>
+            <div class="slide" role="group" aria-roledescription="slide" data-index="1" data-ex-en="I’m moving. Which federal programs do I need to tell?" data-ex-fr="Je déménage. Quels programmes fédéraux dois-je aviser?" aria-hidden="true">
+              <img src="/assets/slide-moving.jpg" alt="A smiling couple carries a moving box and a plant into their new home" data-alt-fr="Un couple souriant transporte une boîte de déménagement et une plante dans sa nouvelle maison" width="1600" height="1000" loading="lazy" decoding="async">
+            </div>
+            <div class="slide" role="group" aria-roledescription="slide" data-index="2" data-ex-en="How do I register my new business?" data-ex-fr="Comment enregistrer ma nouvelle entreprise?" aria-hidden="true">
+              <img src="/assets/slide-business.jpg" alt="Customers order at the counter of a busy neighbourhood coffee shop" data-alt-fr="Des clients commandent au comptoir d’un café de quartier achalandé" width="1600" height="1000" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <div class="stage-ask">
+          <form class="ask" id="ask-form" novalidate>
+          <span id="main-ask" class="anchor" aria-hidden="true"></span>
+          <label for="ask-input" class="ask-label sr-only">
+            <span class="en">Describe what you need</span><span class="fr" lang="fr">Décrivez ce dont vous avez besoin</span>
+          </label>
+          <div class="ask-box">
+            <textarea id="ask-input" name="q" rows="1" maxlength="600" autocomplete="off" placeholder="Try ‘I just lost my job. What help can I get?’"></textarea>
+            <button type="submit" class="ask-submit ask-round" id="ask-submit">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="sr-only"><span class="en">Ask</span><span class="fr" lang="fr">Demander</span></span>
+            </button>
+          </div>
+        </form>
+          </div>
+        </div>
+
+        <div class="stage-controls" role="group" aria-label="Example questions">
+          <button type="button" class="ctrl" id="slide-prev">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 6l-6 6 6 6"/></svg>
+            <span class="sr-only"><span class="en">Previous example</span><span class="fr" lang="fr">Exemple précédent</span></span>
+          </button>
+          <button type="button" class="ctrl pause" id="slide-pause" aria-pressed="false">
+            <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 6v12M15 6v12"/></svg>
+            <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 5.5l11 6.5-11 6.5z"/></svg>
+            <span class="sr-only"><span class="en">Pause the example questions</span><span class="fr" lang="fr">Mettre les exemples en pause</span></span>
+          </button>
+          <button type="button" class="ctrl" id="slide-next">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 6l6 6-6 6"/></svg>
+            <span class="sr-only"><span class="en">Next example</span><span class="fr" lang="fr">Exemple suivant</span></span>
+          </button>
+        </div>
+
+        <p class="trust">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2l8 3v6c0 5.2-3.4 9.7-8 11-4.6-1.3-8-5.8-8-11V5z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8.5 12l2.4 2.4 4.6-4.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="en">Answers come only from canada.ca and gc.ca pages. Free, no ads, and this site does not store your questions. This is a demonstration, limited to 15 questions a day.</span>
+          <span class="fr" lang="fr">Les réponses proviennent uniquement de pages canada.ca et gc.ca. Gratuit, sans publicité, et ce site ne conserve pas vos questions. Ceci est une démonstration, limitée à 15 questions par jour.</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="conversation" id="conversation" aria-labelledby="conversation-title" hidden>
+      <div class="wrap narrow">
+        <div class="conversation-head">
+          <h2 id="conversation-title" tabindex="-1"><span class="en">Your answer</span><span class="fr" lang="fr">Votre réponse</span></h2>
+          <button type="button" class="text-button" id="new-question">
+            <span class="en">Start over</span><span class="fr" lang="fr">Recommencer</span>
+          </button>
+        </div>
+        <ol class="thread" id="thread"></ol>
+        <p class="sr-only" id="status" role="status" aria-live="polite"></p>
+        <form class="ask ask-followup" id="followup-form" novalidate>
+          <label for="followup-input" class="sr-only"><span class="en">Ask a follow-up question</span><span class="fr" lang="fr">Poser une question de suivi</span></label>
+          <div class="ask-box">
+            <textarea id="followup-input" rows="1" maxlength="600" autocomplete="off" placeholder="Ask a follow-up question"></textarea>
+            <button type="submit" class="ask-submit">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="en">Ask</span><span class="fr" lang="fr">Demander</span>
+            </button>
+          </div>
+        </form>
+        <p class="disclaimer-small">
+          <span class="en">AI can make mistakes. Check the linked official page before you act on an answer.</span>
+          <span class="fr" lang="fr">L’IA peut se tromper. Vérifiez la page officielle en lien avant d’agir.</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="section life" id="life-events" aria-labelledby="life-title">
+      <div class="wrap">
+        <h2 id="life-title"><span class="en">What’s happening in your life?</span><span class="fr" lang="fr">Que se passe-t-il dans votre vie?</span></h2>
+        <p class="section-lede"><span class="en">Pick a moment. We’ll pull together what matters from every department.</span><span class="fr" lang="fr">Choisissez un moment. Nous rassemblons ce qui compte, tous ministères confondus.</span></p>
+        <ul class="event-grid">
+          <li><button type="button" class="event" data-q-en="We’re having a baby. What federal benefits and steps should we know about?" data-q-fr="Nous attendons un bébé. Quelles prestations et démarches fédérales devons-nous connaître?">
+            <span class="event-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="24" cy="17" r="8"/><path d="M10 42c1.5-8 7-13 14-13s12.5 5 14 13"/><circle cx="21" cy="16" r="1" class="dot"/><circle cx="27" cy="16" r="1" class="dot"/></svg></span>
+            <span class="event-title"><span class="en">Having a baby</span><span class="fr" lang="fr">Avoir un bébé</span></span>
+            <span class="event-desc"><span class="en">Parental leave, child benefits, birth registration</span><span class="fr" lang="fr">Congé parental, allocations, enregistrement</span></span>
+          </button></li>
+          <li><button type="button" class="event" data-q-en="I just lost my job. What support can I get and what should I do first?" data-q-fr="Je viens de perdre mon emploi. Quel soutien puis-je obtenir et par quoi commencer?">
+            <span class="event-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><rect x="8" y="16" width="32" height="22" rx="4"/><path d="M18 16v-4a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v4M8 26h32"/></svg></span>
+            <span class="event-title"><span class="en">Losing a job</span><span class="fr" lang="fr">Perdre son emploi</span></span>
+            <span class="event-desc"><span class="en">Employment Insurance, training, job search</span><span class="fr" lang="fr">Assurance-emploi, formation, recherche d’emploi</span></span>
+          </button></li>
+          <li><button type="button" class="event" data-q-en="I want to start a small business. What do I need to do with the federal government?" data-q-fr="Je veux démarrer une petite entreprise. Que dois-je faire auprès du gouvernement fédéral?">
+            <span class="event-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M8 20l4-10h24l4 10M8 20h32v18H8zM8 20c0 3 2 5 5 5s5-2 5-5c0 3 2 5 6 5s6-2 6-5c0 3 2 5 5 5s5-2 5-5"/><path d="M20 38v-8h8v8"/></svg></span>
+            <span class="event-title"><span class="en">Starting a business</span><span class="fr" lang="fr">Démarrer une entreprise</span></span>
+            <span class="event-desc"><span class="en">Business number, GST/HST, funding</span><span class="fr" lang="fr">Numéro d’entreprise, TPS/TVH, financement</span></span>
+          </button></li>
+          <li><button type="button" class="event" data-q-en="I’m turning 65 soon. What do I need to do for my pensions and benefits?" data-q-fr="J’aurai bientôt 65 ans. Que dois-je faire pour mes pensions et prestations?">
+            <span class="event-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="15"/><path d="M24 15v9l6 4"/></svg></span>
+            <span class="event-title"><span class="en">Retiring</span><span class="fr" lang="fr">Prendre sa retraite</span></span>
+            <span class="event-desc"><span class="en">CPP, Old Age Security, GIS</span><span class="fr" lang="fr">RPC, Sécurité de la vieillesse, SRG</span></span>
+          </button></li>
+          <li><button type="button" class="event" data-q-en="I’m moving to a new address. Which federal programs do I need to tell, and how?" data-q-fr="Je déménage. Quels programmes fédéraux dois-je aviser, et comment?">
+            <span class="event-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M8 22L24 9l16 13M12 19v19h24V19"/><path d="M20 38V28h8v10"/></svg></span>
+            <span class="event-title"><span class="en">Moving</span><span class="fr" lang="fr">Déménager</span></span>
+            <span class="event-desc"><span class="en">Update your address with CRA and others</span><span class="fr" lang="fr">Mettre à jour votre adresse à l’ARC et ailleurs</span></span>
+          </button></li>
+          <li><button type="button" class="event" data-q-en="I’m new to Canada. What should I do in my first few weeks?" data-q-fr="Je suis nouvel arrivant au Canada. Que dois-je faire dans mes premières semaines?">
+            <span class="event-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="15"/><path d="M9 24h30M24 9c4.5 4 6.5 9 6.5 15s-2 11-6.5 15c-4.5-4-6.5-9-6.5-15s2-11 6.5-15z"/></svg></span>
+            <span class="event-title"><span class="en">New to Canada</span><span class="fr" lang="fr">Nouveau au Canada</span></span>
+            <span class="event-desc"><span class="en">SIN, settlement services, health coverage</span><span class="fr" lang="fr">NAS, établissement, couverture santé</span></span>
+          </button></li>
+          <li><button type="button" class="event" data-q-en="Someone in my family has died. What do I need to do with the federal government?" data-q-fr="Un membre de ma famille est décédé. Que dois-je faire auprès du gouvernement fédéral?">
+            <span class="event-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 40s-14-8.5-14-19a8 8 0 0 1 14-5.3A8 8 0 0 1 38 21c0 10.5-14 19-14 19z"/></svg></span>
+            <span class="event-title"><span class="en">Losing a loved one</span><span class="fr" lang="fr">Perdre un proche</span></span>
+            <span class="event-desc"><span class="en">Death benefits, taxes, cancelling documents</span><span class="fr" lang="fr">Prestations de décès, impôts, documents</span></span>
+          </button></li>
+          <li><button type="button" class="event" data-q-en="I live with a disability. What federal benefits and credits might I qualify for?" data-q-fr="Je vis avec un handicap. À quelles prestations et crédits fédéraux pourrais-je avoir droit?">
+            <span class="event-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="24" cy="10" r="3.5"/><path d="M24 15v12h9l4 10M24 21h8"/><path d="M19 23a10 10 0 1 0 12 13"/></svg></span>
+            <span class="event-title"><span class="en">Living with a disability</span><span class="fr" lang="fr">Vivre avec un handicap</span></span>
+            <span class="event-desc"><span class="en">Disability Benefit, tax credit, supports</span><span class="fr" lang="fr">Prestation pour personnes handicapées, crédit d’impôt</span></span>
+          </button></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section depts" aria-labelledby="depts-title">
+      <div class="wrap">
+        <h2 id="depts-title"><span class="en">Every department. One question.</span><span class="fr" lang="fr">Tous les ministères. Une seule question.</span></h2>
+        <p class="section-lede"><span class="en">No more guessing which website runs which program. Ask once, and the answer draws on pages from across the federal government.</span><span class="fr" lang="fr">Fini de deviner quel site gère quel programme. Posez votre question une fois, et la réponse puise dans l’ensemble des pages du gouvernement fédéral.</span></p>
+      </div>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track" id="marquee-track"></div>
+      </div>
+    </section>
+
+    <section class="section pillars" aria-labelledby="pillars-title">
+      <div class="wrap">
+        <h2 id="pillars-title" class="sr-only"><span class="en">How it works</span><span class="fr" lang="fr">Comment ça fonctionne</span></h2>
+        <ul class="pillar-grid">
+          <li class="pillar">
+            <span class="pillar-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M10 12h28v20H22l-8 7v-7h-4z"/><path d="M17 20h14M17 25h9"/></svg></span>
+            <h3><span class="en">Plain answers, official sources</span><span class="fr" lang="fr">Des réponses claires, des sources officielles</span></h3>
+            <p><span class="en">Every answer is built from canada.ca and gc.ca pages, with links so you can check the source.</span><span class="fr" lang="fr">Chaque réponse s’appuie sur des pages canada.ca et gc.ca, avec des liens pour vérifier la source.</span></p>
+          </li>
+          <li class="pillar">
+            <span class="pillar-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><rect x="12" y="21" width="24" height="18" rx="4"/><path d="M17 21v-5a7 7 0 0 1 14 0v5"/><circle cx="24" cy="30" r="2.5"/></svg></span>
+            <h3><span class="en">Private by design</span><span class="fr" lang="fr">Confidentialité intégrée</span></h3>
+            <p><span class="en">No account, no tracking, no ads. This site does not store your questions, and your conversation is gone when you close the page.</span><span class="fr" lang="fr">Aucun compte, aucun suivi, aucune publicité. Ce site ne conserve pas vos questions, et la conversation disparaît quand vous fermez la page.</span></p>
+          </li>
+          <li class="pillar">
+            <span class="pillar-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><rect x="7" y="11" width="26" height="19" rx="3"/><rect x="29" y="18" width="12" height="21" rx="3"/><path d="M14 36h11"/></svg></span>
+            <h3><span class="en">For everyone, on any device</span><span class="fr" lang="fr">Pour tout le monde, sur tout appareil</span></h3>
+            <p><span class="en">Designed to WCAG 2.2 AA. Works with screen readers, keyboards and zoom, in both official languages. No app to download.</span><span class="fr" lang="fr">Conçu selon les WCAG 2.2 AA. Compatible avec les lecteurs d’écran, le clavier et le zoom, dans les deux langues officielles. Aucune application à télécharger.</span></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section popular" id="popular" aria-labelledby="popular-title">
+      <div class="wrap">
+        <h2 id="popular-title"><span class="en">Most requested on canada.ca</span><span class="fr" lang="fr">Les plus demandés sur canada.ca</span></h2>
+        <p class="section-lede"><span class="en">Prefer to go straight there? These open the official pages.</span><span class="fr" lang="fr">Vous préférez y aller directement? Ces liens ouvrent les pages officielles.</span></p>
+        <ul class="link-grid">
+          <li><a class="tile" href="https://www.canada.ca/en/government/sign-in-online-account.html" data-href-fr="https://www.canada.ca/fr/gouvernement/ouvrir-session-dossier-compte-en-ligne.html"><span class="en">Sign in to an account</span><span class="fr" lang="fr">Se connecter à un compte</span></a></li>
+          <li><a class="tile" href="https://www.canada.ca/en/services/benefits/ei.html" data-href-fr="https://www.canada.ca/fr/services/prestations/ae.html"><span class="en">Employment Insurance and leave</span><span class="fr" lang="fr">Assurance-emploi et congés</span></a></li>
+          <li><a class="tile" href="https://www.canada.ca/en/services/benefits/publicpensions.html" data-href-fr="https://www.canada.ca/fr/services/prestations/pensionspubliques.html"><span class="en">Public pensions (CPP and OAS)</span><span class="fr" lang="fr">Pensions publiques (RPC et SV)</span></a></li>
+          <li><a class="tile" href="https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-passports.html" data-href-fr="https://www.canada.ca/fr/immigration-refugies-citoyennete/services/passeports-canadiens.html"><span class="en">Get a passport</span><span class="fr" lang="fr">Obtenir un passeport</span></a></li>
+          <li><a class="tile" href="https://www.canada.ca/en/services/benefits/disability/canada-disability-benefit.html" data-href-fr="https://www.canada.ca/fr/services/prestations/handicap/prestation-canadienne-personnes-situation-handicap.html"><span class="en">Canada Disability Benefit</span><span class="fr" lang="fr">Prestation canadienne pour les personnes handicapées</span></a></li>
+          <li><a class="tile" href="https://www.canada.ca/en/services/benefits/dental/dental-care-plan.html" data-href-fr="https://www.canada.ca/fr/services/prestations/dentaire/regime-soins-dentaires.html"><span class="en">Canadian Dental Care Plan</span><span class="fr" lang="fr">Régime canadien de soins dentaires</span></a></li>
+          <li><a class="tile" href="https://www.canada.ca/en/services/taxes.html" data-href-fr="https://www.canada.ca/fr/services/impots.html"><span class="en">Taxes</span><span class="fr" lang="fr">Impôts</span></a></li>
+          <li><a class="tile" href="https://www.canada.ca/en/services/immigration-citizenship.html" data-href-fr="https://www.canada.ca/fr/services/immigration-citoyennete.html"><span class="en">Immigration and citizenship</span><span class="fr" lang="fr">Immigration et citoyenneté</span></a></li>
+          <li><a class="tile" href="https://www.canada.ca/en/services/jobs.html" data-href-fr="https://www.canada.ca/fr/services/emplois.html"><span class="en">Jobs</span><span class="fr" lang="fr">Emplois</span></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section next" id="next" aria-labelledby="next-title">
+      <div class="wrap">
+        <p class="eyebrow dark"><span class="en">Beyond answers</span><span class="fr" lang="fr">Au-delà des réponses</span></p>
+        <h2 id="next-title"><span class="en">Government that follows through</span><span class="fr" lang="fr">Un gouvernement qui assure le suivi</span></h2>
+        <p class="section-lede"><span class="en">Good answers are step one. Next come interfaces that remember you, finish the task with you and follow up when something changes. These are concepts with sample data.</span><span class="fr" lang="fr">De bonnes réponses sont une première étape. Viennent ensuite des interfaces qui se souviennent de vous, terminent la démarche avec vous et font le suivi quand quelque chose change. Ce sont des concepts avec des données fictives.</span></p>
+
+        <ul class="concept-grid">
+          <li class="concept">
+            <div class="mock" aria-hidden="true">
+              <p class="mock-title"><span class="en">Update your address</span><span class="fr" lang="fr">Mettre à jour votre adresse</span></p>
+              <ul class="mock-checks">
+                <li><span class="check on"></span><span class="en">Canada Revenue Agency</span><span class="fr" lang="fr">Agence du revenu du Canada</span></li>
+                <li><span class="check on"></span>Service Canada</li>
+                <li><span class="check on"></span><span class="en">Elections Canada</span><span class="fr" lang="fr">Élections Canada</span></li>
+                <li><span class="check"></span><span class="en">Veterans Affairs Canada</span><span class="fr" lang="fr">Anciens Combattants Canada</span></li>
+              </ul>
+              <span class="mock-button"><span class="en">Update everywhere</span><span class="fr" lang="fr">Mettre à jour partout</span></span>
+            </div>
+            <h3><span class="en">Tell us once</span><span class="fr" lang="fr">Dites-le-nous une fois</span></h3>
+            <p><span class="en">Change your address or name one time, with your consent, and it reaches every program that needs it.</span><span class="fr" lang="fr">Changez votre adresse ou votre nom une seule fois, avec votre consentement, et l’information se rend à chaque programme concerné.</span></p>
+          </li>
+          <li class="concept">
+            <div class="mock" aria-hidden="true">
+              <p class="mock-title"><span class="en">Passport renewal</span><span class="fr" lang="fr">Renouvellement de passeport</span></p>
+              <ol class="mock-steps">
+                <li class="done"><span class="en">Submitted</span><span class="fr" lang="fr">Soumise</span></li>
+                <li class="done"><span class="en">In review</span><span class="fr" lang="fr">En examen</span></li>
+                <li class="current"><span class="en">Printing</span><span class="fr" lang="fr">Impression</span></li>
+                <li><span class="en">Mailed</span><span class="fr" lang="fr">Postée</span></li>
+              </ol>
+              <p class="mock-note"><span class="en">We’ll text you when it ships.</span><span class="fr" lang="fr">Nous vous textons à l’envoi.</span></p>
+            </div>
+            <h3><span class="en">Track every application</span><span class="fr" lang="fr">Suivre chaque demande</span></h3>
+            <p><span class="en">Passports, EI, permits and more in one place, with honest status updates and no phone queue.</span><span class="fr" lang="fr">Passeports, AE, permis et plus au même endroit, avec des mises à jour franches et sans file d’attente téléphonique.</span></p>
+          </li>
+          <li class="concept">
+            <div class="mock" aria-hidden="true">
+              <p class="mock-title"><span class="en">You may qualify for</span><span class="fr" lang="fr">Vous pourriez avoir droit à</span></p>
+              <ul class="mock-list">
+                <li><span class="pill green"><span class="en">Likely</span><span class="fr" lang="fr">Probable</span></span><span class="en">Dental care plan</span><span class="fr" lang="fr">Soins dentaires</span></li>
+                <li><span class="pill green"><span class="en">Likely</span><span class="fr" lang="fr">Probable</span></span><span class="en">GST/HST credit</span><span class="fr" lang="fr">Crédit TPS/TVH</span></li>
+                <li><span class="pill amber"><span class="en">Check</span><span class="fr" lang="fr">À vérifier</span></span><span class="en">Disability tax credit</span><span class="fr" lang="fr">Crédit pour personnes handicapées</span></li>
+              </ul>
+            </div>
+            <h3><span class="en">Benefits that find you</span><span class="fr" lang="fr">Des prestations qui vous trouvent</span></h3>
+            <p><span class="en">Government already knows a lot. With permission, it should tell you what you’re missing and enrol you.</span><span class="fr" lang="fr">Le gouvernement en sait déjà beaucoup. Avec votre permission, il devrait vous signaler ce qui vous échappe et vous inscrire.</span></p>
+          </li>
+          <li class="concept">
+            <div class="mock" aria-hidden="true">
+              <p class="mock-title"><span class="en">Application for benefits</span><span class="fr" lang="fr">Demande de prestations</span></p>
+              <div class="mock-field"><span class="mock-label"><span class="en">Full name</span><span class="fr" lang="fr">Nom complet</span></span><span class="mock-input filled">Alex Tremblay</span></div>
+              <div class="mock-field"><span class="mock-label"><span class="en">Address</span><span class="fr" lang="fr">Adresse</span></span><span class="mock-input filled">123 Rue Example, Gatineau</span></div>
+              <p class="mock-note"><span class="en">8 of 10 fields filled from your profile</span><span class="fr" lang="fr">8 champs sur 10 remplis depuis votre profil</span></p>
+            </div>
+            <h3><span class="en">Forms that fill themselves</span><span class="fr" lang="fr">Des formulaires qui se remplissent</span></h3>
+            <p><span class="en">One secure sign-in, and forms arrive filled with what government already has. You check it and submit.</span><span class="fr" lang="fr">Une seule connexion sécurisée, et les formulaires arrivent remplis avec ce que le gouvernement sait déjà. Vous vérifiez et soumettez.</span></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section shift" id="shift" aria-labelledby="shift-title">
+      <div class="wrap narrow">
+        <p class="eyebrow dark"><span class="en">Commentary</span><span class="fr" lang="fr">Commentaire</span></p>
+        <h2 id="shift-title"><span class="en">Yes, and: the website is only a first step</span><span class="fr" lang="fr">Oui, et : le site Web n’est qu’un premier pas</span></h2>
+
+        <div class="en prose">
+          <p>On September 29, 2026, the United States launched <a href="https://america.gov/">America.gov</a>, an AI front door that pulls 29,000 federal websites into one place. It is a good idea, and Canadians deserve the same: ask in plain words, get a clear answer from official sources.</p>
+          <p>Canada has the pieces moving. With <a href="https://www.pm.gc.ca/en/news/news-releases/2026/06/04/prime-minister-carney-launches-ai-all-canadas-new-national-artificial">AI for All</a>, its national AI strategy, the government set out to use AI to improve public services. <a href="https://www.pm.gc.ca/en/news/news-releases/2026/09/03/prime-minister-carney-launches-digital-transformation-canada-deliver">Digital Transformation Canada</a>, launched September 3 with Patrick Pichette as CEO, brings Shared Services Canada, the Canadian Digital Service and teams from three other departments under one roof. In Prime Minister Carney’s words, it “will ensure the federal government leads by example.” The <a href="https://www.canada.ca/en/treasury-board-secretariat/services/professional-development/build-canada-exchange.html">Build Canada Exchange</a> brings outside talent into the public service on temporary assignments.</p>
+          <p>A better website helps. The bigger gains sit behind it:</p>
+          <ol class="moves">
+            <li><strong>Digitize key government processes from the ground up.</strong> Websites aren’t what slows us down. Government processes are. Rebuild them digitally, end to end, so a decision takes days or weeks, not months or years.</li>
+            <li><strong>Tell us once.</strong> Government should ask for each piece of data one time, then reuse it with your consent. Estonia built its digital state on this “once-only” principle. <a href="https://digital.canada.ca/2026/09/28/simplifying-access-to-government-programs-and-services-with-canadalogin/">CanadaLogin</a>, the Canadian Digital Service’s new single sign-in for more than 90 online programs, is a great first step.</li>
+            <li><strong>Come to people first.</strong> The CRA’s new <a href="https://www.canada.ca/en/revenue-agency/campaigns/offering-and-expanding-automatic-tax-filing-services.html">automatic tax filing</a>, starting with the 2026 tax year, helps lower-income Canadians get the benefits they’re owed without the paperwork. Apply the same idea across more government benefits.</li>
+            <li><strong>Open the plumbing.</strong> Publish secure APIs for core federal services so provinces, cities and Canadian companies can build on them.</li>
+            <li><strong>Back the people doing the work.</strong> Product teams with real authority, AI tools for every public servant, and exchanges that move builders in and public servants out.</li>
+            <li><strong>Stay sovereign and open.</strong> Run public-facing AI on infrastructure Canada trusts, publish how it works, and post service times live.</li>
+          </ol>
+          <p>Digital Transformation Canada has the mandate for this work. This site is a sketch of where it could start.</p>
+        </div>
+
+        <div class="fr prose" lang="fr">
+          <p>Le 29 septembre 2026, les États-Unis ont lancé <a href="https://america.gov/">America.gov</a>, une porte d’entrée propulsée par l’IA qui regroupe 29 000 sites fédéraux en un seul endroit. C’est une bonne idée, et les Canadiens méritent la même chose : poser une question dans ses mots et obtenir une réponse claire tirée de sources officielles.</p>
+          <p>Au Canada, les morceaux se mettent en place. Avec sa <a href="https://www.pm.gc.ca/en/news/news-releases/2026/06/04/prime-minister-carney-launches-ai-all-canadas-new-national-artificial">stratégie nationale en intelligence artificielle</a>, le gouvernement s’est donné pour objectif d’utiliser l’IA pour améliorer les services publics. <a href="https://www.pm.gc.ca/fr/nouvelles/communiques/2026/09/03/premier-ministre-carney-lance-transformation-numerique-canada">Transformation numérique Canada</a>, lancée le 3 septembre avec Patrick Pichette comme PDG, réunit Services partagés Canada, le Service numérique canadien et des équipes de trois autres ministères. Selon les mots du premier ministre Carney, elle « veillera à ce que le gouvernement fédéral donne l’exemple ». Le programme <a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/perfectionnement-professionnel/echanges-batir-canada.html">Échanges pour bâtir le Canada</a> accueille des talents de l’extérieur dans la fonction publique pour des affectations temporaires.</p>
+          <p>Un meilleur site aide. Les plus grands gains se trouvent derrière :</p>
+          <ol class="moves">
+            <li><strong>Numériser à la base les grands processus gouvernementaux.</strong> Ce ne sont pas les sites Web qui nous ralentissent, ce sont les processus. Il faut les rebâtir en numérique, du début à la fin, pour qu’une décision prenne des jours ou des semaines, et non des mois ou des années.</li>
+            <li><strong>Le dire une seule fois.</strong> Le gouvernement devrait demander chaque donnée une seule fois, puis la réutiliser avec votre consentement. L’Estonie a bâti son État numérique sur ce principe. <a href="https://digital.canada.ca/2026/09/28/simplifying-access-to-government-programs-and-services-with-canadalogin/">CanadaLogin</a>, la nouvelle connexion unique du Service numérique canadien pour plus de 90 programmes en ligne, est un excellent premier pas.</li>
+            <li><strong>Aller vers les gens.</strong> La nouvelle <a href="https://www.canada.ca/en/revenue-agency/campaigns/offering-and-expanding-automatic-tax-filing-services.html">production automatique des déclarations</a> de l’ARC, à compter de l’année d’imposition 2026, aide les personnes à faible revenu à recevoir les prestations auxquelles elles ont droit, sans paperasse. Il faut étendre cette idée à davantage de prestations gouvernementales.</li>
+            <li><strong>Ouvrir la tuyauterie.</strong> Publier des API sécurisées pour les grands services fédéraux, afin que les provinces, les villes et les entreprises canadiennes puissent bâtir dessus.</li>
+            <li><strong>Soutenir les gens qui font le travail.</strong> Des équipes produit avec un vrai pouvoir de décision, des outils d’IA pour chaque fonctionnaire, et des échanges qui font entrer des bâtisseurs et sortir des fonctionnaires.</li>
+            <li><strong>Rester souverain et ouvert.</strong> Faire fonctionner l’IA publique sur une infrastructure de confiance au Canada, publier son fonctionnement et afficher les délais de service en direct.</li>
+          </ol>
+          <p>Transformation numérique Canada a le mandat pour faire ce travail. Ce site esquisse par où commencer.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <p class="footer-brand">canadafuturegov.ca</p>
+        <p>
+          <span class="en">An independent concept by <a href="https://jaxsonkhan.com">Jaxson Khan</a>. Not affiliated with or endorsed by the Government of Canada.</span>
+          <span class="fr" lang="fr">Un concept indépendant de <a href="https://jaxsonkhan.com">Jaxson Khan</a>. Aucune affiliation avec le gouvernement du Canada ni approbation de sa part.</span>
+        </p>
+      </div>
+      <div>
+        <h2 class="footer-heading"><span class="en">How the answers work</span><span class="fr" lang="fr">Comment fonctionnent les réponses</span></h2>
+        <p>
+          <span class="en">Your question goes to Claude, an AI model by Anthropic, which searches only canada.ca and gc.ca pages and writes a short answer with links. This site keeps no logs of questions. AI can be wrong, so check the official page before you act.</span>
+          <span class="fr" lang="fr">Votre question est transmise à Claude, un modèle d’IA d’Anthropic, qui cherche uniquement dans les pages canada.ca et gc.ca et rédige une courte réponse avec des liens. Ce site ne conserve aucune question. L’IA peut se tromper : vérifiez la page officielle avant d’agir.</span>
+        </p>
+      </div>
+      <div>
+        <h2 class="footer-heading"><span class="en">Official sources</span><span class="fr" lang="fr">Sources officielles</span></h2>
+        <ul class="footer-links">
+          <li><a href="https://www.canada.ca/en.html" data-href-fr="https://www.canada.ca/fr.html">Canada.ca</a></li>
+          <li><a href="https://www.canada.ca/en/contact.html" data-href-fr="https://www.canada.ca/fr/contact.html"><span class="en">Contact the Government of Canada</span><span class="fr" lang="fr">Joindre le gouvernement du Canada</span></a></li>
+          <li><a href="https://www.canada.ca/en/government/system/digital-government.html" data-href-fr="https://www.canada.ca/fr/gouvernement/systeme/gouvernement-numerique.html"><span class="en">Government in a digital age</span><span class="fr" lang="fr">Le gouvernement à l’ère numérique</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-heading"><span class="en">Image credits</span><span class="fr" lang="fr">Crédits photo</span></h2>
+        <p><span class="en">Photos by Chi Liu, Vitaly Gariev and Jay Lee on <a href="https://unsplash.com/">Unsplash</a>. Background image from <a href="https://www.canada.ca/en.html">Canada.ca</a>, Government of Canada.</span><span class="fr" lang="fr">Photos de Chi Liu, Vitaly Gariev et Jay Lee sur <a href="https://unsplash.com/">Unsplash</a>. Image d’arrière-plan tirée de <a href="https://www.canada.ca/fr.html">Canada.ca</a>, gouvernement du Canada.</span></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
