@@ -38,10 +38,14 @@ digitized processes.
   without first searching official pages gets the same fixed reply.
 - **Non-partisan.** The site describes what programs offer. It does not comment on
   politicians, parties, elections or policy debates.
-- **Private.** No accounts, no tracking and no ads. Questions are not stored or logged; the
-  function logs token counts only.
-- **Demo limits.** 15 questions per visitor per day and a daily total cap, counted under a
-  hash of the day and IP address.
+- **Private.** No accounts, no tracking and no ads. Questions and answers are not stored
+  or logged; the function logs token counts only, and the conversation lives only in the
+  browser tab. Questions are sent to Anthropic's API to write the answer. Asked whether it
+  stores personal information, the site gives a fixed, accurate reply rather than a
+  model-written one.
+- **Demo limits.** 15 questions per visitor per day and a daily total cap. Counters are keyed
+  by a hash of the IP address with a random salt that changes daily, and each day's salt
+  and counters are deleted the next day.
 
 ## Accessibility
 
