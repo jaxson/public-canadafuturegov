@@ -275,7 +275,7 @@
   window.setInterval(() => {
     if (paused || hovering || askInput.value || stage.contains(document.activeElement) || Date.now() - lastManual < 6000) return;
     showSlide(slideIndex + 1);
-  }, 6000);
+  }, 3000);
 
   /* ---------- Marquee ---------- */
 
