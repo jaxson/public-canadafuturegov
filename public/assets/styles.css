@@ -508,6 +508,8 @@ html[lang="en"] .fr, html[lang="fr"] .en { display: none !important; }
 .slide { opacity: 0; transition: opacity .8s ease; }
 .slide.is-active { opacity: 1; }
 .slide img { width: 100%; height: 100%; object-fit: cover; }
+/* Zoom from the top so the couple's faces sit below the ask box. */
+.slide-moving img { transform: scale(1.4); transform-origin: 42% 0; }
 .stage::before {
   content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
   background: linear-gradient(180deg, rgba(0, 0, 0, .22) 0%, transparent 30%);
@@ -544,6 +546,7 @@ html[lang="en"] .fr, html[lang="fr"] .en { display: none !important; }
 @media (prefers-reduced-motion: reduce) { .slide { transition: none; } .ctrl:hover { transform: none; } }
 @media (max-width: 700px) {
   .stage { aspect-ratio: 4 / 5; }
+  .slide-moving img { object-position: 30% 50%; transform: scale(1.5); transform-origin: 50% 0; }
   .stage-ask { top: 12px; left: 12px; right: 12px; }
   .stage-ask .ask-box { flex-direction: row; align-items: center; border-radius: 32px; padding: 8px 8px 8px 20px; }
   .stage-ask .ask-box textarea { min-height: 84px; padding: 8px 0; font-size: 1.05rem; }
